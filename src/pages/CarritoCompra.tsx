@@ -64,6 +64,7 @@ const CarritoCompra = () => {
     return (
       <PayPalButtons 
         createOrder={(data, actions) => {
+          console.log(data)
           return actions.order.create({
             purchase_units: [
               {
@@ -76,6 +77,7 @@ const CarritoCompra = () => {
           });
         }}
         onApprove={async (data, actions) => {
+          console.log(data);
           const order = await actions.order?.capture();
           console.log("order", order);
           
