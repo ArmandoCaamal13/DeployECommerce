@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useState, useEffect } from 'react';
+import { Dispatch, SetStateAction, useState } from 'react';
 import '../assets/css/CarritoCompras.css';
 import { Product } from '../interfaces/product';
 import { PayPalButtons } from "@paypal/react-paypal-js";
