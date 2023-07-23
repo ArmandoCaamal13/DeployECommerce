@@ -21,12 +21,16 @@ const AddToShoppingCart = (producto) => {
 
 export default function CardsProducts() {
     const [products, setProducts]: [Product[], Dispatch<Product[]>] = useState(
-      setLoggedIn(false)
+        []
     );
 
-    const [isLoggedIn, setLoggedIn] = useState(localStorage.getItem('user') ? true : false); 
+    const [isLoggedIn, setLoggedIn] = useState(localStorage.getItem('user') ? true : false);
 
-    
+    const functon = () => {
+        setLoggedIn(false)
+    }
+
+    console.log(functon)
 
     useEffect(() => {
         async function getData() {
