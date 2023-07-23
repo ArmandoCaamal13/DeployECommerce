@@ -1,4 +1,4 @@
-const url = 'https://web.whatsapp.com/';
+const url = 'http://www.apieccomerce.somee.com';
 
 export async function httpGet(endpoint, query?) {
     let string = url.concat(endpoint);
