@@ -17,21 +17,21 @@ const NavbarAdmin: React.FC<NavbarProps> = ({ isLoggedIn, onLogout }) => {
     const logout = () => {
         localStorage.clear();
         onLogout(); // Call the onLogout function to handle logout logic in parent component
-        navigate('/admin/login');
+        navigate('/DeployECommerce/admin/login');
     };
 
     useEffect(() => {
         // Set the active route based on the current pathname
         const pathname = location.pathname;
-        if (pathname === '/admin/productos') {
+        if (pathname === '/DeployECommerce/admin/productos') {
             products.current?.classList.add('text-white');
             categoria.current?.classList.remove('text-white');
             sales.current?.classList.remove('text-white');
-        } else if (pathname === '/admin/categoria') {
+        } else if (pathname === '/DeployECommerce/admin/categoria') {
             products.current?.classList.remove('text-white');
             categoria.current?.classList.add('text-white');
             sales.current?.classList.remove('text-white');
-        } else if (pathname === '/admin/ventas') {
+        } else if (pathname === '/DeployECommerce/admin/ventas') {
             products.current?.classList.remove('text-white');
             categoria.current?.classList.remove('text-white');
             sales.current?.classList.add('text-white');
@@ -45,21 +45,21 @@ const NavbarAdmin: React.FC<NavbarProps> = ({ isLoggedIn, onLogout }) => {
                 <>
                     <nav className="d-flex align-items-center gap-3 ms-auto">
                         <Link
-                            to="/admin/productos"
+                            to="/DeployECommerce/admin/productos"
                             className={`text-secondary text-decoration-none`}
                             ref={products}
                         >
                             Productos
                         </Link>
                         <Link
-                            to="/admin/categoria"
+                            to="/DeployECommerce/admin/categoria"
                             className={`text-secondary text-decoration-none`}
                             ref={categoria}
                         >
                             Categoria
                         </Link>
                         <Link
-                            to="/admin/ventas"
+                            to="/DeployECommerce/admin/ventas"
                             className={`text-secondary text-decoration-none`}
                             ref={sales}
                         >

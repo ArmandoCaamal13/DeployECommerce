@@ -47,7 +47,7 @@ const Login: React.FC<LoginProps> = ({onLogin}) => {
                 confirmButtonText: 'Continuar'
               }).then(() => {
                 onLogin();
-                return navigate("/")
+                return navigate("/DeployECommerce/")
               });
             } else {
               // Show error message when credentials are invalid
@@ -104,7 +104,7 @@ const Login: React.FC<LoginProps> = ({onLogin}) => {
                         required />
                 </div>
                 <button type="submit" className="form__btn">Ingresar</button>
-                <Link to="/register" className="linkBtn">Registrarse</Link>
+                <Link to="/DeployECommerce/register" className="linkBtn">Registrarse</Link>
             </form>
         </div>
     )

@@ -158,7 +158,7 @@ const Categoria = () => {
             </dialog>
             <div className="container-fluid d-flex align-items-center justify-content-between h-100 py-3 px-4">
                 <h3>Listado de categorias</h3>
-                <Link className="btn btn-primary" to="/admin/categoria/agregar">
+                <Link className="btn btn-primary" to="/DeployECommerce/admin/categoria/agregar">
                     Agregar categoria
                 </Link>
             </div>

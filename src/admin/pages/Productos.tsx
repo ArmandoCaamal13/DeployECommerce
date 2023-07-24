@@ -251,7 +251,7 @@ const Productos = () => {
             </dialog>
             <div className="container-fluid d-flex align-items-center justify-content-between h-100 py-3 px-4">
                 <h3>Listado de productos</h3>
-                <Link className="btn btn-primary" to="/admin/productos/agregar">
+                <Link className="btn btn-primary" to="/DeployECommerce/admin/productos/agregar">
                     Agregar producto
                 </Link>
             </div>

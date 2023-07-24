@@ -45,8 +45,8 @@ const Navbar: React.FC<NavbarProps> = ({ isLoggedIn, onLogout }) => {
                             className="navbar-toggler-icon"></span></button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav">
-                            <li className="nav-item"><Link className="nav-link text-black" to={"/"}>Home</Link></li>
-                            <li className="nav-item"><Link className="nav-link text-black" to={"/productos"}>Productos</Link></li>
+                            <li className="nav-item"><Link className="nav-link text-black" to={"/DeployECommerce"}>Home</Link></li>
+                            <li className="nav-item"><Link className="nav-link text-black" to={"/DeployECommerce/productos"}>Productos</Link></li>
                             <Tooltip title="Account">
                                 <IconButton
                                     onClick={handleClick}
@@ -99,7 +99,7 @@ const Navbar: React.FC<NavbarProps> = ({ isLoggedIn, onLogout }) => {
                                         <MenuItem key="shopCart" onClick={handleClose}>
                                             <LocalGroceryStoreSharpIcon />{' '}
                                             <h6 style={{ marginTop: '5px', marginLeft: '10px' }}>
-                                                <Link className="nav-link text-black" to={'/carrito'}>
+                                                <Link className="nav-link text-black" to={'/DeployECommerce/carrito'}>
                                                     ShopCart
                                                 </Link>
                                             </h6>
@@ -107,7 +107,7 @@ const Navbar: React.FC<NavbarProps> = ({ isLoggedIn, onLogout }) => {
                                         <Divider key="divider" />,
                                         <MenuItem key="logout" onClick={() => {
                                             onLogout();
-                                            navigate("/login")
+                                            navigate("/DeployECommerce/login")
                                         }}>
                                             <HowToRegRoundedIcon>
                                                 <Logout fontSize="small" />
@@ -133,7 +133,7 @@ const Navbar: React.FC<NavbarProps> = ({ isLoggedIn, onLogout }) => {
                                                 <Logout fontSize="small" />
                                             </HowToRegRoundedIcon>
                                             <h6 style={{ marginTop: '5px', marginLeft: '10px' }}>
-                                                <Link className="nav-link text-black" to={'/register'}>
+                                                <Link className="nav-link text-black" to={'/DeployECommerce/register'}>
                                                     Register
                                                 </Link>
                                             </h6>

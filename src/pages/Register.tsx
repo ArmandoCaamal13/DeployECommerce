@@ -49,7 +49,7 @@ const Register = () => {
           text: "Usuario registrado correctamente. Por favor, inicia sesión.",
           confirmButtonText: "Continuar",
         }).then(() => {
-          navigate("/login");
+          navigate("/DeployECommerce/login");
         });
       } else {
         alert("Datos incorrectos");
@@ -141,7 +141,7 @@ const Register = () => {
         <button type="submit" className="form__btn">
           Completar registro
         </button>
-        <Link to="/login" className="linkBtn">Iniciar sesion</Link>
+        <Link to="/DeployECommerce/login" className="linkBtn">Iniciar sesion</Link>
 
       </form>
     </div>
