@@ -24,7 +24,8 @@ jobs:
   # Single deploy job since we're just deploying
   deploy:
     environment:
-      name: github-pages
+      name: github-pages,
+      homepage: "https://armandocaamal13.github.io/DeployECommerce/",       
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
