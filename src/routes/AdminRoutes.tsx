@@ -33,7 +33,7 @@ const AdminRoutes = () => {
                             />
                         }
                     />
-                    <Route path="/login" element={ <adminPages.LoginAdmin onLogin={handleLogin} />} />
+                    <Route path="DeployECommerce/login" element={ <adminPages.LoginAdmin onLogin={handleLogin} />} />
                     <Route
                         path="/productos"
                         element={<adminPages.Productos />}
