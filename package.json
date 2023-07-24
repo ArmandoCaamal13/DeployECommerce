@@ -3,7 +3,7 @@
     "homepage": "https://armandocaamal13.github.io/DeployECommerce/",
     "private": true,
     "version": "0.0.0",
-    "proxy": "https://localhost:7195",
+    "proxy": "http://www.apieccomerce.somee.com",
     "type": "module",
     "scripts": {
         "dev": "vite",
