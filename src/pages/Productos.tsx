@@ -12,7 +12,7 @@ const Productos = () => {
         <div>
             <div className="products">
                 <div>
-                    <img src="img/productos/Rectangulo.png" className="banner_product" alt="" />
+                    <img src="https://i.ibb.co/FJcbp11/Rectangulo.png" className="banner_product" alt="" />
                 </div>
                 <div className="container mt-5">
                     <div className="search">
